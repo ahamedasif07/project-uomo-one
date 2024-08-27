@@ -18,24 +18,29 @@ const NavBar = () => {
   return (
     <nav>
       <div className="flex  py-4 justify-around">
-        <div className="flex flex-col md:flex-row gap-2">
+        <div className="flex flex-col md:flex-row gap-3">
           <figure>
             <img src={navLogo} alt="" />
           </figure>
 
           {/* Menu items with transition */}
           <ul
-            className={`absolute top-14 md:top-0 md:relative md:flex transition-all duration-300 ease-in-out transform ${
+            className={`absolute gap-4  top-14 md:top-0 md:relative md:flex transition-all duration-300 ease-in-out transform ${
               menu ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-5"
             } md:opacity-100 md:translate-y-0`}
           >
-            <li>HOME</li>
-            <li>HOME</li>
-            <li>HOME</li>
-            <li>HOME</li>
+            <li className="text-[17px] font-semibold text-gray-600">HOME</li>
+            <li className="text-[17px] font-semibold text-gray-600">SHOP</li>
+            <li className="text-[17px] font-semibold text-gray-600">
+              COLLECTION
+            </li>
+            <li className="text-[17px] font-semibold text-gray-600">JOURNAL</li>
+            <li className="text-[17px] font-semibold text-gray-600">
+              LOOKBOOK
+            </li>
           </ul>
         </div>
-        <div className="flex gap-4">
+        <div className="flex gap-2 md:gap-4">
           <img className="w-[20px] h-[20px]" src={icon1} alt="" />
           <img className="w-[20px] h-[20px]" src={icon2} alt="" />
           <img className="w-[20px] h-[20px]" src={icon3} alt="" />
