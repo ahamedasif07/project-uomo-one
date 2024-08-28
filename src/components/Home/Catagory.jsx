@@ -27,10 +27,10 @@ const Catagory = () => (
         </div>
         <div className="md:w-1/2">
           {/* Upper content */}
-          <div className="px-[60px]  flex flex-col md:gap-3 gap-0  pt-3 md:pt-0 md:px-0">
+          <div className="md:px-[60px] px-4  flex flex-col md:gap-3 gap-0  pt-3 md:pt-0 lg:px-0">
             <div className="relative">
               <div
-                className="h-[300px] md:h-[290px] bg-cover bg-center"
+                className="max:h-[300px] md:h-[290px] bg-cover bg-center"
                 style={{ backgroundImage: `url(${collection_grid_2})` }}
               >
                 <div className="absolute bottom-0 pb-7 px-6 ">
