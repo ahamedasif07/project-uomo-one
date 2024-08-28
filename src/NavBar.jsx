@@ -25,7 +25,7 @@ const NavBar = () => {
 
           {/* Menu items with transition */}
           <ul
-            className={`absolute gap-4  top-14 md:top-0 md:relative md:flex transition-all duration-300 ease-in-out transform ${
+            className={`absolute gap-4 z-10 sm:bg-gray-100 sm:shadow-lg  sm:px-3 sm:mt-2 top-14 md:top-0 md:relative md:flex transition-all duration-300 ease-in-out transform ${
               menu ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-5"
             } md:opacity-100 md:translate-y-0`}
           >
