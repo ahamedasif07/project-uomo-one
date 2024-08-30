@@ -3,7 +3,7 @@ const SprineCollection = () => {
   return (
     <div className="container  mx-auto">
       <div
-        className="my-6 border-4 md:object-fill flex flex-col justify-center border-red-500 px-8 mx-5"
+        className="my-6 border-4 md:object-fill flex flex-col justify-center  px-8 mx-5"
         style={{
           backgroundImage: `url(${springImg})`,
           backgroundSize: "container",
@@ -17,7 +17,7 @@ const SprineCollection = () => {
             Deal of the week
           </h2>
         </div>
-        <h2 className="uppercase font-semibold py-6 lg:text-5xl text-3xl ">
+        <h2 className="uppercase font-semibold py-6 lg:text-6xl text-3xl ">
           <span className="font-extrabold ">Spring</span> Collection
         </h2>
 

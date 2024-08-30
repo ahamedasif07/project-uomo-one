@@ -1,5 +1,6 @@
 import Catagory from "../components/Home/Catagory";
 import Header from "../components/Home/Header";
+import MenWomen from "../components/Home/MenWomen";
 import SprineCollection from "../components/Home/SprineCollection";
 import TrandyProducts from "../components/Home/TrandyProducts";
 
@@ -10,6 +11,7 @@ const Home = () => {
       <Catagory></Catagory>
       <TrandyProducts></TrandyProducts>
       <SprineCollection></SprineCollection>
+      <MenWomen></MenWomen>
     </div>
   );
 };

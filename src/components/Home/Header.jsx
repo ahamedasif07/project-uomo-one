@@ -61,9 +61,12 @@ const Header = () => {
                 {slide.subText}
               </h3>
               <h2
-                className={`text-xl sm:text-2xl md:text-3xl lg:text-5xl ${slide.textStyle}`}
+                className={`text-xl font-semibold  sm:text-2xl md:text-3xl lg:text-5xl ${slide.textStyle}`}
               >
-                {slide.text}
+                {slide.text?.slice(0, 20)}
+                <span className="font-extrabold text-black">
+                  {slide.text?.slice(20, 40)}
+                </span>
               </h2>
               <button className={`mt-2 ${slide.buttonStyle}`}>
                 {slide.buttonText}
