@@ -41,7 +41,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="px-3">
+    <div className="px-5">
       <div className="relative container mx-auto h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] overflow-hidden bg-[#FFF6F2]">
         {slides.map((slide, index) => (
           <div
