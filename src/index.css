@@ -8,3 +8,6 @@ body {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
 }
+.btn-shop:hover .shop-border {
+  width: 72px !important;
+}

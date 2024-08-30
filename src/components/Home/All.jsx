@@ -6,7 +6,7 @@ const All = () => {
   const [allProducts, setAllProducts] = useState([]);
   const [showProducts, setShowProducts] = useState(8);
   const [isHover, setIshover] = useState(null);
-  const [loveColour, setLoveColour] = useState(false);
+  const [loveColour, setLoveColour] = useState({}); // Store love status by product ID
 
   useEffect(() => {
     const fetching = async () => {
@@ -20,8 +20,17 @@ const All = () => {
   const handleShowAll = () => {
     setShowProducts(allProducts.length);
   };
-  const handleLoveColour = () => {
-    setLoveColour(!loveColour);
+
+  const handleLoveColour = (id) => {
+    console.log("frist", id);
+    console.log(loveColour);
+
+    setLoveColour((prev) => ({
+      ...prev,
+      [id]: !prev[id],
+
+      // Toggle the love status for the specific product
+    }));
   };
 
   return (
@@ -44,7 +53,9 @@ const All = () => {
                 <h2
                   onClick={() => handleLoveColour(product.id)}
                   className={
-                    loveColour ? "text-red-600 pr-2" : "text-gray-600 pr-2"
+                    loveColour[product.id]
+                      ? "text-red-600 pr-2"
+                      : "text-gray-600 pr-2"
                   }
                 >
                   <IoMdHeartEmpty />
