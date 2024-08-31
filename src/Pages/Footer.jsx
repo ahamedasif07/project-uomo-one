@@ -2,8 +2,8 @@ import uomoLogo from "../../public/images/uomo-home-page-1/logo.png";
 import logosPng from "../../public/images/icons/social.png";
 const Footer = () => {
   return (
-    <div className="container mx-auto bg-gray-300 py-7 ">
-      <footer>
+    <div className=" bg-[#e4e4e4] py-14 ">
+      <footer className="container mx-auto">
         <div className="flex flex-col gap-6 mx-4 justify-between items-stretch md:flex-row">
           <div className="">
             <img src={uomoLogo} alt="" />
