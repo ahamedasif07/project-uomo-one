@@ -1,0 +1,23 @@
+.image-hover {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.image-hover::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Low opacity */
+  transform: translate(-50%, -50%) scale(0);
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.image-hover:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}

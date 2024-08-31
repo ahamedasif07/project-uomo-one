@@ -10,24 +10,25 @@ import instaNine from "../../../public/images/uomo-home-page-1/insta9.jpg";
 import instaTen from "../../../public/images/uomo-home-page-1/insta10.jpg";
 import instaEleven from "../../../public/images/uomo-home-page-1/insta11.jpg";
 import instaTwelb from "../../../public/images/uomo-home-page-1/insta12.jpg";
+import "./Uomo/uomo.css";
 
 const Uomo = () => {
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto py-4">
       <h2 className="text-2xl font-bold text-center pt-8 pb-3">@UOMO</h2>
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 ">
-        <img className="w-full" src={instaOne} alt="" />
-        <img className="w-full" src={instaTwo} alt="" />
-        <img className="w-full" src={instaTheree} alt="" />
-        <img className="w-full" src={instaFour} alt="" />
-        <img className="w-full" src={instaFive} alt="" />
-        <img className="w-full" src={instaSix} alt="" />
-        <img className="w-full" src={instaSeven} alt="" />
-        <img className="w-full" src={instaEight} alt="" />
-        <img className="w-full" src={instaNine} alt="" />
-        <img className="w-full" src={instaTen} alt="" />
-        <img className="w-full" src={instaEleven} alt="" />
-        <img className="w-full" src={instaTwelb} alt="" />
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <img className="w-full image-hover" src={instaOne} alt="" />
+        <img className="w-full image-hover" src={instaTwo} alt="" />
+        <img className="w-full image-hover" src={instaTheree} alt="" />
+        <img className="w-full image-hover" src={instaFour} alt="" />
+        <img className="w-full image-hover" src={instaFive} alt="" />
+        <img className="w-full image-hover" src={instaSix} alt="" />
+        <img className="w-full image-hover" src={instaSeven} alt="" />
+        <img className="w-full image-hover" src={instaEight} alt="" />
+        <img className="w-full image-hover" src={instaNine} alt="" />
+        <img className="w-full image-hover" src={instaTen} alt="" />
+        <img className="w-full image-hover" src={instaEleven} alt="" />
+        <img className="w-full image-hover" src={instaTwelb} alt="" />
       </div>
     </div>
   );

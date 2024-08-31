@@ -1,4 +1,5 @@
 import Catagory from "../components/Home/Catagory";
+import Futures from "../components/Home/Futures";
 import Header from "../components/Home/Header";
 import LemetedAdition from "../components/Home/LemetedAdition";
 import MenWomen from "../components/Home/MenWomen";
@@ -16,6 +17,7 @@ const Home = () => {
       <MenWomen></MenWomen>
       <LemetedAdition></LemetedAdition>
       <Uomo></Uomo>
+      <Futures></Futures>
     </div>
   );
 };
