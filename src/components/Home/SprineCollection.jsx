@@ -6,7 +6,7 @@ const SprineCollection = () => {
         className="my-6 border-4 md:object-fill flex flex-col justify-center  px-8 mx-5"
         style={{
           backgroundImage: `url(${springImg})`,
-          backgroundSize: "container",
+          backgroundSize: "cover",
           backgroundPosition: "center",
           height: "450px",
         }}

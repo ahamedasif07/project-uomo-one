@@ -35,7 +35,7 @@ const All = () => {
 
   return (
     <div>
-      <div className="container px-5 mx-auto grid lg:grid-cols-4 gap-5 grid-cols-2 md:grid-cols-3">
+      <div className="container px-5  mx-auto grid lg:grid-cols-4 gap-5 grid-cols-2 md:grid-cols-3">
         {allProducts.slice(0, showProducts).map((product) => (
           <div key={product.id}>
             <div

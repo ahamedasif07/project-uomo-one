@@ -1,9 +1,12 @@
-import React from "react";
 import Slider from "react-slick";
 import { FaQuoteRight } from "react-icons/fa";
 import "./Carucel.css";
+import { IoMdHeartEmpty } from "react-icons/io";
+import { useState } from "react"; // Import useState to handle state
 
 const CaeucelSlider = () => {
+  const [loveColour, setLoveColour] = useState({}); // Initialize the state
+
   const settings = {
     dots: true,
     infinite: true,
@@ -41,38 +44,92 @@ const CaeucelSlider = () => {
     ],
   };
 
-  const reviews = [
-    { id: 1, name: "Asif", image: "image1.jpg" },
-    { id: 2, name: "John", image: "image2.jpg" },
-    { id: 3, name: "Doe", image: "image3.jpg" },
-    { id: 4, name: "Jane", image: "image4.jpg" },
+  const LemitedItems = [
+    {
+      id: 1,
+      title: "Dresses",
+      sizes: ["S", "M", "L", "XL"],
+      price: 120,
+      image1: "https://i.postimg.cc/Rh7CmFp2/product-0-1.jpg",
+
+      category: "new-arrival",
+      name: "Polo-Shirt",
+    },
+    {
+      id: 2,
+      title: "Dresses",
+      sizes: ["S", "M", "L", "XL"],
+      price: 130,
+      image1: "https://i.postimg.cc/28Y8wQVY/product-1-1.jpg",
+
+      category: "new-arrival",
+      name: "Casual Shirt",
+    },
+    {
+      id: 3,
+      title: "Dresses",
+      sizes: ["S", "M", "L", "XL"],
+      price: 125,
+      image1: "https://i.postimg.cc/Yqx2yvWW/product-2-1.jpg",
+
+      category: "new-arrival",
+      name: "Formal Shirt",
+    },
+    {
+      id: 4,
+      title: "Dresses",
+      sizes: ["S", "M", "L", "XL"],
+      price: 140,
+      image1: "https://i.postimg.cc/Z5KYkJ8D/product-3-1.jpg",
+
+      category: "new-arrival",
+      name: "Denim Jacket",
+    },
   ];
 
+  const handleLoveColour = (id) => {
+    setLoveColour((prev) => ({
+      ...prev,
+      [id]: !prev[id],
+    }));
+  };
+
   return (
-    <div className="container border-4 mx-auto overflow-hidden">
-      <Slider {...settings}>
-        {reviews.map((student) => (
-          <div key={student.id} className="">
-            <div className=" md:h-[310px] border-2 flex flex-col justify-center items-center px-5 py-2 pb-5">
-              <div className="flex flex-col justify-center">
+    <div className="container py-5 mx-auto">
+      <div className=" overflow-hidden">
+        <Slider {...settings}>
+          {LemitedItems.map((product) => (
+            <div key={product.id}>
+              <div className="w-full">
                 <img
-                  className="border-2 border-amber-700 w-[80px] h-[80px] object-cover p-[3px] rounded-full mx-auto"
-                  src={student.image}
-                  alt={student.name}
+                  className=" w-full p-3 h-[200px] duration-1000 ease-in-out md:h-[300px] lg:h-[350px]"
+                  src={product.image1} // Fixed the incorrect variable reference
+                  alt={product.title} // Added alt text
                 />
-                <h1 className="text-center text-[16px] pt-1 font-[600] text-[#3e54a3]">
-                  {student.name}
-                </h1>
-                <p className="text-[12px] text-[#00000090]">{student.SBatch}</p>
+                <div className="flex items-center pt-4 pb-2 justify-between px-4">
+                  <h3 className="text-[12px] text-gray-600">{product.title}</h3>
+                  <h2
+                    onClick={() => handleLoveColour(product.id)}
+                    className={
+                      loveColour[product.id]
+                        ? "text-red-600 pr-2"
+                        : "text-gray-600 pr-2"
+                    }
+                  >
+                    <IoMdHeartEmpty />
+                  </h2>
+                </div>
+                <h3 className="text-[15px] text-left px-4 text-gray-700">
+                  {product.name}
+                </h3>
+                <p className="text-[15px] text-left px-4 text-gray-700">
+                  ${product.price}
+                </p>
               </div>
-              <span>
-                <FaQuoteRight className="text-[25px] text-[#e28e11e6] mt-2" />
-              </span>
-              <h2 className="text-[16px] text-start SILIGURI mt-3"></h2>
             </div>
-          </div>
-        ))}
-      </Slider>
+          ))}
+        </Slider>
+      </div>
     </div>
   );
 };
