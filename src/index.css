@@ -11,3 +11,7 @@ body {
 .btn-shop:hover .shop-border {
   width: 72px !important;
 }
+
+.footer-futures:hover .footer-border {
+  width: 55px !important;
+}

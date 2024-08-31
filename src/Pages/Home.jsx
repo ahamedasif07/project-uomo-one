@@ -6,6 +6,7 @@ import MenWomen from "../components/Home/MenWomen";
 import SprineCollection from "../components/Home/SprineCollection";
 import TrandyProducts from "../components/Home/TrandyProducts";
 import Uomo from "../components/Home/Uomo";
+import Footer from "./Footer";
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       <LemetedAdition></LemetedAdition>
       <Uomo></Uomo>
       <Futures></Futures>
+      <Footer></Footer>
     </div>
   );
 };

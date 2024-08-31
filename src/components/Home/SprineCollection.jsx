@@ -25,7 +25,7 @@ const SprineCollection = () => {
           <button className="text-[13px] font-semibold  text-gray-700">
             SHOP NOW
           </button>
-          <p className="shop-border w-[40px]  duration-300 easy-in-out h-[3px] bg-black"></p>
+          <p className="shop-border w-[40px]  duration-300 footer-futures-p  easy-in-out h-[3px] bg-black"></p>
         </div>
       </div>
     </div>
