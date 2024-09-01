@@ -1,8 +1,9 @@
 import uomoLogo from "../../public/images/uomo-home-page-1/logo.png";
 import logosPng from "../../public/images/icons/social.png";
+import logosTwenty from "../../public/images/icons/image 20.png";
 const Footer = () => {
   return (
-    <div className=" bg-[#e4e4e4] py-14 ">
+    <div className=" bg-[#e4e4e4] pt-20 pb-24 ">
       <footer className="container mx-auto">
         <div className="flex flex-col gap-6 mx-4 justify-between items-stretch md:flex-row">
           <div className="">
@@ -177,8 +178,15 @@ const Footer = () => {
               </p>
               <p className="text-[14px] py-2">sale@uomo.com</p>
               <p className="text-[14px]">+1 246-345-0695</p>
+              <input
+                type="scarch"
+                name=""
+                id=""
+                placeholder="scarch"
+                className="px-4 py-3 mt-4"
+              />
               <div>
-                <img className="pt-6" src={logosPng} alt="" />
+                <img className="pt-6" src={logosTwenty} alt="" />
               </div>
             </div>
           </div>
