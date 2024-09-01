@@ -2,6 +2,9 @@ import { createBrowserRouter } from "react-router-dom";
 import LayOut from "./LayOut";
 import Home from "./Pages/Home";
 import All from "./components/Home/All";
+import AdminLayout from "./admin/adminLayout";
+import Page1 from "./admin/APage/Page1";
+import Treading from "./admin/APage/Treading";
 
 export const router = createBrowserRouter([
   {
@@ -17,6 +20,22 @@ export const router = createBrowserRouter([
             element: <All></All>,
           },
         ],
+      },
+    ],
+  },
+  // --------------admin layout -------------
+
+  {
+    path: "/admin",
+    element: <AdminLayout />,
+    children: [
+      {
+        path: "/admin",
+        element: <Page1 />,
+      },
+      {
+        path: "/admin/trending",
+        element: <Treading />,
       },
     ],
   },
