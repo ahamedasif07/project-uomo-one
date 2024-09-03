@@ -5,7 +5,7 @@ import collection_grid_3 from "../../../public/images/uomo-home-page-1/collectio
 
 const Catagory = () => (
   <div>
-    <div className="container px-3  mx-auto py-10">
+    <div className="md:container px-3  mx-auto py-10">
       <div className="flex lg:flex-row flex-col gap-8">
         <div className="lg:w-1/2">
           <div className="md:px-[60px] px-2 lg:px-0">

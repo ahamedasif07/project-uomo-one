@@ -1,7 +1,7 @@
 import springImg from "../../../public/images/uomo-home-page-1/deal_timer_bg.jpg";
 const SprineCollection = () => {
   return (
-    <div className="container  mx-auto">
+    <div className="md:container  mx-auto">
       <div
         className="my-6 border-4 md:object-fill flex flex-col justify-center  px-8 mx-5"
         style={{

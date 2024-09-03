@@ -4,7 +4,7 @@ import baner2 from "../../../public/images/uomo-home-page-1/banner_2.jpg";
 
 const MenWomen = () => {
   return (
-    <div className="container mx-auto px-3 py-10 md:flex gap-4">
+    <div className="md:container mx-auto px-3 py-10 md:flex gap-4">
       <div className="md:w-1/2">
         <div className="md:px-[60px] px-2 lg:px-0">
           <div

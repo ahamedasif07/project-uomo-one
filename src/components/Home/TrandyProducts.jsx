@@ -3,11 +3,11 @@ import { Link, NavLink, Outlet } from "react-router-dom";
 
 const TrandyProducts = () => {
   return (
-    <div className="container mx-auto pt-[40px] ">
+    <div className="md:container px-3 mx-auto pt-[40px] ">
       <h2 className="text-center text-3xl font-semibold">
         Our Trendy <span className="font-extrabold">Products</span>
       </h2>
-      <div className="px-4">
+      <div className="px-2">
         <ul className="flex flex-wrap justify-center gap-5 py-7">
           <NavLink
             className="font-semibold text-[14px] text-gray-700 relative pb-1 group"

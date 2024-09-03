@@ -14,7 +14,7 @@ const CaeucelSlider = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
-    pauseOnHover: true,
+    pauseOnHover: false,
 
     responsive: [
       {
@@ -95,12 +95,12 @@ const CaeucelSlider = () => {
   };
 
   return (
-    <div className="container py-5 mx-auto">
+    <div className="md:container py-5 px-2 mx-auto">
       <div className=" overflow-hidden">
         <Slider {...settings}>
           {LemitedItems.map((product) => (
             <div key={product.id}>
-              <div className="w-full">
+              <div className="w-full border-2">
                 <img
                   className=" w-full p-3 h-[200px] duration-1000 ease-in-out md:h-[300px] lg:h-[350px]"
                   src={product.image1} // Fixed the incorrect variable reference

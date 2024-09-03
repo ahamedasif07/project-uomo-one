@@ -15,3 +15,7 @@ body {
 .footer-futures:hover .footer-border {
   width: 55px !important;
 }
+
+.card-body:hover .card-icon {
+  display: block !important;
+}
