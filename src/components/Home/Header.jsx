@@ -68,9 +68,12 @@ const Header = () => {
                   {slide.text?.slice(20, 40)}
                 </span>
               </h2>
-              <button className={`mt-2 ${slide.buttonStyle}`}>
-                {slide.buttonText}
-              </button>
+              <div className="group ">
+                <button className={`mt-2 no-underline  ${slide.buttonStyle}`}>
+                  {slide.buttonText}
+                </button>
+                <p className="h-[3px] group-hover:w-[110px] transition-all duration-300 w-[35px] bg-black"></p>
+              </div>
             </div>
             <div className="w-full md:w-1/2 h-full flex justify-center items-center transition-transform duration-700 ease-in-out">
               <img
